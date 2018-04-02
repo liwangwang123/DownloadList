@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="BQRecommendTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="BQRecommendTableViewCell" rowHeight="88" id="KGk-i7-Jjw" customClass="BQRecommendTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dvm-hJ-47q">
+                        <rect key="frame" x="10" y="14" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Dvf-Gt-4Xy"/>
+                            <constraint firstAttribute="width" secondItem="Dvm-hJ-47q" secondAttribute="height" id="kbi-f3-Czc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeO-dj-QKz">
+                        <rect key="frame" x="77" y="21" width="74" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简介简介简介" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlY-i9-Vln">
+                        <rect key="frame" x="77" y="48" width="74" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.57641839981079102" green="0.57650405168533325" blue="0.57639968395233154" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CT-Pj-tW1" customClass="BQExtendSizeButton">
+                        <rect key="frame" x="277" y="32" width="55" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="E0n-eU-ISo"/>
+                            <constraint firstAttribute="height" constant="24" id="gDM-0I-frU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="下载">
+                            <color key="titleColor" red="0.24815312027931213" green="0.63238233327865601" blue="0.13315701484680176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vKZ-P7-2e2">
+                        <rect key="frame" x="277" y="39.5" width="55" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="9" id="FTl-qZ-5nd"/>
+                            <constraint firstAttribute="width" constant="55" id="ZVo-7x-0al"/>
+                        </constraints>
+                        <color key="progressTintColor" red="0.2481531203" green="0.63238233330000004" blue="0.1331570148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </progressView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dvm-hJ-47q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KqP-g0-6e3"/>
+                    <constraint firstItem="IlY-i9-Vln" firstAttribute="leading" secondItem="HeO-dj-QKz" secondAttribute="leading" id="Ro8-W5-XE4"/>
+                    <constraint firstItem="IlY-i9-Vln" firstAttribute="top" secondItem="HeO-dj-QKz" secondAttribute="bottom" constant="9" id="Vl7-nK-L47"/>
+                    <constraint firstItem="vKZ-P7-2e2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cQZ-yr-Od6"/>
+                    <constraint firstItem="HeO-dj-QKz" firstAttribute="leading" secondItem="Dvm-hJ-47q" secondAttribute="trailing" constant="7" id="eJI-ag-DBW"/>
+                    <constraint firstItem="6CT-Pj-tW1" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="gFd-yL-1KR"/>
+                    <constraint firstItem="HeO-dj-QKz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="hBm-QI-hG6"/>
+                    <constraint firstItem="Dvm-hJ-47q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="iQo-sG-X6E"/>
+                    <constraint firstItem="vKZ-P7-2e2" firstAttribute="trailing" secondItem="6CT-Pj-tW1" secondAttribute="trailing" id="ibh-95-dPH"/>
+                    <constraint firstItem="6CT-Pj-tW1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kBj-UJ-bdI"/>
+                    <constraint firstItem="IlY-i9-Vln" firstAttribute="trailing" secondItem="HeO-dj-QKz" secondAttribute="trailing" id="yPx-gA-cMT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="downloadButton" destination="6CT-Pj-tW1" id="TBA-0f-K22"/>
+                <outlet property="explainLabel" destination="IlY-i9-Vln" id="H8y-Db-j8X"/>
+                <outlet property="headerView" destination="Dvm-hJ-47q" id="tkh-tA-37E"/>
+                <outlet property="nameLabel" destination="HeO-dj-QKz" id="FCK-ri-4CE"/>
+                <outlet property="progressView" destination="vKZ-P7-2e2" id="1lp-VZ-7qd"/>
+            </connections>
+            <point key="canvasLocation" x="48" y="76"/>
+        </tableViewCell>
+    </objects>
+</document>
